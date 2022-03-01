@@ -1,15 +1,45 @@
 .orange-background{
     background-color: rgba(235, 119, 210, 0.322);
+    border-radius: 10px;
+    
+}
+.container{
+    margin-bottom: 50px;
+    
 }
 .carousel-item{
     padding: 20px 20px;
 }
 .price{
-    color: rgb(231, 90, 161);
+    font-weight: bolder;
+    color: rgb(223, 50, 136);
 }
-.buy-now-button{
+.btn{
     color: white;
-    font-weight: 400;
-    background-color: rgb(231, 110, 171);
-    border-radius: 6px;
+    background-color: #ff0080;
+    border-radius: 10px;
+}
+.col-md-4 :hover{
+    box-shadow: 5px 5px 10px rgb(90, 85, 85);
+}
+.cat1, .cat2, .cat3{
+    border-radius: 10px;
+    color: white;
+    padding: 10px 30px;
+    
+}
+.cat1{
+    background-color: orange;
+
+}
+.cat2{
+    background-color: orchid;
+}
+.cat3{
+    background-color: blue;
+}
+.card{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(90, 85, 85);
 }
