@@ -19,6 +19,7 @@
     background-color: #ff0080;
     border-radius: 10px;
 }
+
 .cat1, .cat2, .cat3{
     border-radius: 10px;
     color: white;
@@ -36,9 +37,8 @@
     background-color: blue;
 }
 .card{
-    border-radius: 10px;
     border: none;
-    box-shadow: 5px 5px 10px rgb(90, 85, 85);
+    box-shadow: 5px 5px 10px 10px lightgrey;
 }
 #subscribe{
     
