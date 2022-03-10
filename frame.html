@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame{
+            width: 300px;
+            height: 225px;
+            border: 10px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+
+        }
+        .photo-frame .photo img{
+            width: 100%;
+        }
+        .photo-frame:hover .photo img{
+            transform:scale(1.2);
+            transition: transform 2s;
+        }
+        .photo-detail{
+             position: absolute;
+             display: none;
+             width: 300px;
+             height: 225px;
+             top: 0px;
+
+        }
+        .photo-frame:hover .photo-detail{
+            display: block;
+            background-color: rgba(175, 127, 64, 0.2);
+        }
+        .photo-frame:hover .photo-detail h3{
+            color: white;
+            background-color: black;
+            text-align: center;
+
+        }
+        .photo-frame:hover .photo-detail p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Photo Book</h1>
+    <section class="photo-album">
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+        <div class="photo-frame">
+            <div class="photo">
+                <img src="tiger.jpg" alt="">
+            </div>
+            <div class="photo-detail">
+                <h3>Royel Bangel tiger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nemo quibusdam dolorem officia voluptates voluptatem, temporibus nam aliquam, similique sunt eius sint </p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
