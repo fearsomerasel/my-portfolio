@@ -8,8 +8,13 @@
     
 }
 .carousel-item{
+   
     padding: 20px 20px;
 }
+.categories{
+    margin-top: 20px;
+}
+
 .price{
     font-weight: bolder;
     color: rgb(223, 50, 136);
@@ -39,6 +44,9 @@
 .card{
     border: none;
     box-shadow: 5px 5px 10px 10px lightgrey;
+}
+.cat:hover{
+    box-shadow: 5px 5px 10px 10px rgb(143, 139, 139);
 }
 #subscribe{
     
