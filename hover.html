@@ -10,8 +10,8 @@
         .div1{
             
             /* padding: 8px 0px; */
-            height: 700px;
-            width: 200px;
+            height: 600px;
+            width: 250px;
             background-color: gray;
             display: none;
             box-sizing: border-box;
@@ -36,11 +36,13 @@
             padding: 10px 10px;
         }
         .div1 ul li{
+            
             list-style: none;
             padding: 0px;
             margin: 16px;
         }
         .div1 ul li a{
+            border-radius: 3px;
             text-align: left;
             background-color: rgb(3, 84, 84);
             width: 100%;
@@ -50,7 +52,9 @@
             
         }
 
+
         .div2 .div1 ul #sub-menu .sub-menu1{
+           
             display: none;
             margin: -40px;
             float: left;
@@ -63,6 +67,31 @@
          }
          .div2 .div1 ul #sub-menu:hover .sub-menu1{
              display: block;
+         }
+
+         @media screen and (min-width: 900px) {
+             body{
+                 background-color: rgba(146, 169, 135, 0.742);
+             }
+             .div2 .div1 ul{
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: space-between;
+             }
+             .div2 .div1 ul li .sub-menu1 ul{
+                 display: flex;
+                 flex-direction: column;
+
+             }
+
+             .div1{
+                 height: 30px;
+                 width: 100px;
+
+                 background-color: non;
+                 display: block;
+             }
+             
          }
 
     </style>
@@ -108,5 +137,10 @@
 
         </div>
     </div>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi optio libero quis nisi, quisquam eius officia odio consectetur tempore ipsum omnis veritatis impedit nemo laboriosam aspernatur iste! Tempora eius accusantium commodi dolore facere aliquam ratione velit a. Accusamus eum numquam temporibus ea at voluptatibus, labore consequatur corporis veritatis qui veniam obcaecati nobis explicabo sapiente ullam impedit minima praesentium accusantium recusandae quae. Ut repellendus quae laboriosam minima sint possimus, reiciendis consequatur quaerat delectus error corporis nobis repellat alias ullam quasi necessitatibus, iure illo sed nisi deleniti. Distinctio temporibus dignissimos, consectetur nesciunt excepturi ad perspiciatis dolor facilis recusandae neque repellendus suscipit quod.</p>
+    </div>
+
+    
 </body>
 </html>
