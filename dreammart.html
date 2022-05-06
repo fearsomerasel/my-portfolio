@@ -47,6 +47,7 @@
             flex-direction: row;
         }
         
+        
       
        
        
@@ -68,33 +69,54 @@
             display: none;
         }
 
-        #menu-list{
+        /* .menu{
             display: none;
             float: left;
             border-radius: 5px;
             width: 200px;
-            margin-top: 0px;
-            background-color: gray;
+            
+            margin-top: 30px;
+            margin-left: 0px;
+            
+            text-align: center;
             color: white;
             padding: 15px;
+        } */
+        /* .menu{
+            display: flex;
+            flex-direction: column;
         }
-        #menu-list ul{
+        .menu ul{
+            margin-right: 50px;
+            margin-top: 50px;
             list-style: none;
            
         }
-        #menu-list ul li{
+        .menu ul li{
             border-radius: 3px;
             background-color: #080D31;
             padding: 8px;
             margin: 2px;
-        }
-        .div{
-            z-index: 1;
+        } */
+
+        #menu-list{
+            float: left;
+            display: none;
             height: 300px;
             width: 300px;
             background-color: aqua;
         }
 
+        #cros{
+            display: none;
+            float: right;
+            height: 40px;
+            width: 40px;
+            background-color: gray;
+        }
+  .clear-div{
+      clear: both;
+  }
         
 
        @media screen and (min-width:900px) {
@@ -131,7 +153,14 @@
             display: none;
 
         }
+        #menu-list{
+            display: none;
+        }
         #menu-icon{
+            display: none;
+        }
+
+        .container .menu-list{
             display: none;
         }
        }
@@ -139,13 +168,20 @@
     </style>
 </head>
 <body id="body">
-    <div class="container">
+<div class="container">
 
         <div class="nav-bar">
-            <div class="search-div">
-                <div class="mobile-div"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0H79BYzzzJbDuRbt5IUcCUrR3QtCeceEiA&usqp=CAU"   alt=""></div>
-            <div class="mobile-div"><input type="text" placeholder="Search"></div>
+
+           
+
+         <div class="search-div">
+             <div class="mobile-div"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0H79BYzzzJbDuRbt5IUcCUrR3QtCeceEiA&usqp=CAU"   alt="">
             </div>
+
+
+            <div class="mobile-div"><input type="text" placeholder="Search">
+            </div>
+         </div>
 
            <div class="pc-div"><a href="">Home </a></div>
            
@@ -154,49 +190,67 @@
             <div class="pc-div">Brand</div>
             <div class="pc-div">About Us</div>
             <div class="pc-div">Help</div>
-            
-            <div class="menu">
-                <div class="mobile-div"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyjiF3csY3ULzpj2Ld3sbQ6qWWh2mkCHrPoA&usqp=CAU" alt=""></div>
-            <div  id="menu-icon" class="mobile-div "><img   src="https://w7.pngwing.com/pngs/626/110/png-transparent-black-logo-computer-icons-hamburger-button-menu-new-menu-angle-text-rectangle.png" alt="">
-                
-            
-            </div> 
-            </div>  
-        </div>
 
-        <div id="menu-list">
-            <ul>
-                <li>Home</li>
-                <li>Categories <span>></span> </li>
-                <li>Brands</li>
-                <li>Contact Us</li>
-                <li> Help</li>
-            </ul>
+           
+            
+        <div class="menu">
+                
+            <div class="mobile-div">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyjiF3csY3ULzpj2Ld3sbQ6qWWh2mkCHrPoA&usqp=CAU" alt="">
+            </div>
+
+                
+
+             <div  id="menu-icon" class="mobile-div "><img   src="https://w7.pngwing.com/pngs/626/110/png-transparent-black-logo-computer-icons-hamburger-button-menu-new-menu-angle-text-rectangle.png" alt="">
+                 
+                
+             </div>                        
+               
+           
         </div>
-        <!-- <div class="div">
-           <h1 style="text-align: left;">hdiwuecdnhiuwencuioqednci</h1> 
-        </div> -->
-        
-        
+            
+            
     </div>
+
+       
+        <div id="menu-list">
+           
+        </div>
+        <div id="cros">
+
+        </div>
+        <div class="clear-div">
+
+        </div>
+        <h2>dsjcnmisdcn</h2>
+        
+        
+</div>
 
     <script>
         const menuIcon = document.getElementById("menu-icon");
         menuIcon.addEventListener("click", function(){
             const menuList = document.getElementById("menu-list");
             menuList.style.display = "block";
+            const cros = document.getElementById("cros");
+            cros.style.display = "block";
+           
+            
+        })
+        const menuIcon1 = document.getElementById("cros");
+        menuIcon1.addEventListener("click", function(){
+            const menuList1 = document.getElementById("menu-list");
+            menuList1.style.display = "none";
+           
+            const crosoff = document.getElementById("cros");
+            crosoff.style.display = "none";
+           
             
         })
         
          
         
-       const mobileMenu = document.getElementById("menu-icon");
-         mobileMenu.addEventListener("mouseover",function(){
-             const mobileMenuList = document.getElementById("menu-list");
-             mobileMenuList.style.display = "none";
-             
-            
-         })  
+    
     </script>
     
 </body>
