@@ -12,6 +12,7 @@ body{
    
 }
 nav{
+   
     background:#0082e6 ;
     height: 80px;
     width: 100%;
@@ -68,7 +69,7 @@ a.active, a:hover{
 
     }
     .checkbtn{
-        display: block;
+        display:none;
 
     }
 }
@@ -88,7 +89,7 @@ a.active, a:hover{
         
         padding-left: 180px;
         text-align: left;
-        transition: all .5s;
+        transition: all .7s;
     }
     nav ul li{
 
