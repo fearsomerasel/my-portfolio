@@ -80,7 +80,7 @@ a.active, a:hover{
     }
     ul{
         
-       position:fixed;
+       position:absolute;
         width: 500px;
         height: 100vh;
         background: #2c3e50;
