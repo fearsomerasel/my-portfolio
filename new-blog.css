@@ -23,7 +23,22 @@ body{
     width: 120rem;
     max-width: 100%;
     margin: auto;
-}    
+} 
+.text-justify{
+    text-align: justify;
+
+}  
+.text-white{
+    color: #fff;
+}
+.section-heading{
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Italianno', cursive;;
+
+}
+
+
 /* header starts here */
 header{
     display: flex;
@@ -40,15 +55,17 @@ header{
 
 }
 .logo{
+    margin-left: 30px;
     font-size: 3rem;
 }
 nav ul{
-    
+    display: inline-block;
 }
 nav li{
-   
+  
     padding: 1rem;
    margin-right: 2rem;
+   
    
 
 }
@@ -60,6 +77,7 @@ nav li:hover{
     background-color: rgba(59, 59, 189, 0.985);
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    transition: .6s;
 
 }
 
@@ -73,12 +91,149 @@ nav li:hover{
 /* header ends here */
 
 
+
+
+
+/* banner stars here */
+#blog-banner{
+    padding: 4rem 1rem;
+    display: flex;
+    background-color: rgba(195, 236, 223, 0.552);
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+
+
+    
+}
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 3px 3px 3px 3px #888888;
+
+}
+.banner-description{
+    font-size:2rem;
+    padding-right: 10px;
+
+}
+#blog-banner aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner-img{
+    width: 45rem;
+    height: 45rem;
+    border: 3px black;
+    
+}
+
+/* banner ends here */
+/* blog about starts here */
+
+
+/* blog about ends here */
+#blog-about{
+    background-image: linear-gradient(to right,rgb(228, 134, 232), rgb(128, 208, 237), rgb(233, 129, 237));
+    min-height: 95hv;
+    padding: 5rem 1rem;
+    background-color: #888888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card-container{
+   
+    display: flex;
+   
+}
+.card{
+
+    color: #fff;
+    width: 33%;
+    background-color: black;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-top-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.card:hover{
+    box-shadow: 10px 10px 10px rgb(205, 223, 230);;
+    transform: scale(1.1);
+    transition: .4s;
+}
+.card-header{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+.card-description{
+    font-size: 14px;
+}
+.btn{
+    background-image: linear-gradient(to right,rgb(233, 238, 240), rgb(140, 224, 253));
+   padding: 5px 30px;
+   margin: 17px;
+   margin-bottom: 0;
+   font-size: 20px;
+   font-weight: bold;
+   border-top-right-radius: 12px;
+   border-bottom-left-radius: 12px;
+   
+}
+.btn:hover{
+    box-shadow: 3px 3px 3px rgb(197, 194, 194);
+    transform: scale(1.05);
+    transition: .2s;
+
+}
 /* responsive starts here */
 
 @media (max-width: 992px){
     
+   
+    
 }
 @media (max-width: 768px){
+    #blog-banner{
+        flex-direction: column;
+    }
+    #blog-banner article{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-bottom: 5rem;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card{
+        width: 60%;
+    }
+    
+
 
 }
 @media (max-width: 600px){
@@ -89,13 +244,15 @@ nav li:hover{
         flex-direction: column;
     }
     nav ul{
+        display: block;
         padding-left: 2.5rem;
 
     }
     nav li{
-        display:block;
+        
         margin-right: 0px;
         margin: 1rem 0;   
-     }
+    }
+    
 }
 /* responsive ends here */
