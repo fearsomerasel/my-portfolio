@@ -108,7 +108,7 @@ nav li:hover{
 }
 .banner-heading{
     display: inline-block;
-    padding: 1rem;
+    padding: 16px;
     font-size: 4rem;
     margin-bottom: 1.5rem;
     background-color: black;
@@ -139,7 +139,7 @@ nav li:hover{
 /* blog about starts here */
 
 
-/* blog about ends here */
+
 #blog-about{
     background-image: linear-gradient(to right,rgb(228, 134, 232), rgb(128, 208, 237), rgb(233, 129, 237));
     min-height: 95hv;
@@ -195,7 +195,7 @@ nav li:hover{
    font-size: 20px;
    font-weight: bold;
    border-top-right-radius: 12px;
-   border-bottom-left-radius: 12px;
+   border-bottom-left-radius: 12px; 
    
 }
 .btn:hover{
@@ -204,6 +204,54 @@ nav li:hover{
     transition: .2s;
 
 }
+
+/* blog about ends here */
+
+/* archive starts here */
+.archive-container-list{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ #archive{
+    padding: 5rem 1rem;
+    min-height: 95vh;
+
+
+ }
+ .archive-img{
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+
+ }
+ .archive-img:hover{
+    transform: scale(1.1);
+    transition: .4s;
+    box-shadow: 6px 6px 8px gray;
+ }
+ .archiver-container{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+   padding: 2rem;
+   border-top: .1rem solid ;
+   border-bottom: 0.1rem solid;
+
+ }
+ .archive-container-list{
+    display: flex;
+    text-align: center;
+
+ }
+ .archive-list-item{
+    margin: 1.5rem;
+ }
+
+
+/* archive ends here */
+
 /* responsive starts here */
 
 @media (max-width: 992px){
@@ -232,7 +280,16 @@ nav li:hover{
     .card{
         width: 80%;
     }
-    
+    .archive{
+        min-height: auto;
+        
+    }
+    /* .archive-container-list{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+     */
 
 
 }
@@ -253,6 +310,10 @@ nav li:hover{
         margin-right: 0px;
         margin: 1rem 0;   
     }
+    /* .archive-container-list{
+        display: flex;
+        flex-direction: column;
+    } */
     
 }
 /* responsive ends here */
