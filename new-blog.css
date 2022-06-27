@@ -212,6 +212,9 @@ nav li:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+
 }
 
  #archive{
@@ -221,10 +224,10 @@ nav li:hover{
 
  }
  .archive-img{
-    width: 100%;
-    height: 100%;
-    border-radius: .6rem;
-
+   width: 100%;
+   height: 100%;
+   border-radius: .6rem;
+   
  }
  .archive-img:hover{
     transform: scale(1.1);
@@ -240,14 +243,11 @@ nav li:hover{
    border-bottom: 0.1rem solid;
 
  }
- .archive-container-list{
-    display: flex;
-    text-align: center;
-
- }
- .archive-list-item{
-    margin: 1.5rem;
- }
+.archive-list-item{
+    
+    margin: 10px;
+}
+ 
 
 
 /* archive ends here */
