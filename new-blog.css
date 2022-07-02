@@ -43,7 +43,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     color: white;
     background-color: black;
     padding: 2rem 1rem;
@@ -56,7 +56,10 @@ header{
 }
 .logo{
     margin-left: 30px;
-    font-size: 3rem;
+    font-size: 38px;
+}
+#menu-bar{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -372,6 +375,7 @@ footer p{
     
 }
 @media (max-width: 768px){
+ 
     #blog-banner{
         flex-direction: column;
     }
@@ -424,6 +428,19 @@ footer p{
         justify-content: center;
 
     }
+    .logoBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu-bar{
+        display: block;
+        margin-right: 20px;
+        
+        cursor: pointer;
+    }
+    .hidden{
+        display: none;
+    }
     #blog-header{
         display: flex;
         flex-direction: column;
@@ -433,6 +450,7 @@ footer p{
         margin-right: 0px;
         margin: 1rem 0;   
     }
+  
     .blog-post{
         display: flex;
         flex-direction: column;

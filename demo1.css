@@ -27,9 +27,13 @@ header{
     font-weight: bolder;
 }
 
+
 .menu-link:hover{
     border-top: 5px solid orange;
     transition: .3s;
+}
+.link1{
+    border-top: 5px solid orange;
 }
 /* main starts here */
 #main{
