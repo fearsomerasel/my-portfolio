@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: #153568;
+  font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 45px;
+}
+.menu-items{
+    margin-top: 17px;
+    list-style: none;
+    display: flex;
+    
+}
+
+
+.menu-link{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    padding-top: 25px;
+    font-weight: bolder;
+}
+
+.menu-link:hover{
+    border-top: 5px solid orange;
+    transition: .3s;
+}
+/* main starts here */
+#main{
+    margin-top: 30px;
+    margin-left: 45px;
+    width: 45%;
+}
+.heading{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 10px 0px;
+    letter-spacing: 1px;
+}
+.mobile{
+    border-bottom: 15px solid #FF9000;
+    border-width: 17px;
+        
+}
+.apps{
+    color: orange;
+}
+.sub-heading{
+    color: darkorange;
+    font-weight: 600;
+    margin: 22px 0px;
+}
+.paragraph{
+    color: white;
+    text-align: justify;
+}
+.buttons{
+    margin: 22px 0px;
+    
+}
+.previous{
+    color: black;
+    background-color: darkorange;
+    border: navajowhite;
+    padding: 12px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.next{
+    color: white;
+    background: none;
+    border: 3.5px solid white;
+    padding: 7.5px 35px;
+    font-weight: 700;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.lower-text{
+    color: white;
+    margin: 100px 45px;
+}
+/* main ends here */
