@@ -257,7 +257,7 @@ nav li:hover{
  
 .blog-post{
     position: relative;
-    width: 75%;
+    width: 80%;
     display: flex;
     margin: 1rem;
     box-shadow: .5rem .5rem .5rem gray;
@@ -277,7 +277,8 @@ nav li:hover{
     flex: 1;
 }
 .blog-content{
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
     flex: 2;
     padding: 5px 15px;
     font-size: 15px;
@@ -436,7 +437,7 @@ footer p{
         display: flex;
         flex-direction: column;
          width: 75%;
-         height: 530px;
+         height: 510px;
     }
     
     .blog-content{
