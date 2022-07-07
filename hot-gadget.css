@@ -31,9 +31,14 @@ h3{
 }
 
 .item2, .item3, .item1{
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     border-radius: 8px;
     border: none;
     box-shadow: 5px 5px 10px 10px lightgrey;
+}
+.item2, .item3, .item1:hover{
+    cursor: pointer;
 }

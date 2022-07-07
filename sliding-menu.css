@@ -11,13 +11,19 @@ body{
     font-family: montserrat;
    
 }
+.nav-bar{
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+
+}
 nav{
-   
     background:#0082e6 ;
     height: 80px;
-    width: 100%;
+    
 }
 label.logo{
+
     color: white;
     font-size: 35px;
     line-height: 80px;
@@ -79,12 +85,15 @@ a.active, a:hover{
     }
 }
 @media (max-width: 858px){
+    .nav-bar{
+        z-index: 3;
+    }
     .checkbtn{
         display: block;
 
     }
     ul{
-        z-index: 10;
+        z-index: 1;
         position: absolute;
         width: 400px;
         height: 100vh;
@@ -120,6 +129,3 @@ a.active, a:hover{
 }
 
 
-#carouselExampleCaptions{
-   
-}

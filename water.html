@@ -9,37 +9,73 @@
         *{
             margin: 0;
             padding: 0;
-        }
-       
-      
-       .love p{
-           
-        padding-top: 40%;
-           padding-left: 45%;
-           color: rgb(228, 224, 23);
-           font-family: 'Times New Roman';
-           font-size: 1px;
+            
 
-       }
-       .love p:hover{
-           padding-top: 200px;
-           padding-left: 25%;
-           color: rgb(228, 224, 23);
-           font-family: 'Times New Roman';
-           font-size: 100px;
-           transition: 5s;
-       }
+        }
+
+        .navigation{
+            padding: 8px 8px 8px 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(137, 10, 10, 0.567);
+            
+        }
+
+        .logo{
+            margin-top: 8px;
+        }
+        .menu-items{
+            display: flex;
+            justify-content: space-around;
+            align-items:center ;
+            list-style: none;
+        }
+        .menu-item{
+            margin: 3px;
+
+        }
+        .menu-link{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 21px;
+            border-bottom-right-radius: 8px;
+            border-top-left-radius:8px ;
+            
+        }
+        .menu-link:hover{
+            background-color: rgba(123, 14, 14, 0.573);
+        }
+
+
     </style>
     <script src="script.js"></script>
 </head>
 
 <body>
-    <section style="max-height: 100%; margin: auto;">
+    <section style="max-height: 90%; margin: auto;">
         <div id="ripple" style="height: 70rem;background: url(water.jpg) left top / cover;"> 
-        <div class="love">
-            <p>I love You AFUN ❤</p>
+        
+           <nav class="navigation">
+            <div class="logo">
+
+                <img src="logo.png" alt="" width="110px">
+            </div>
+            <div class="menu">
+                <ul class="menu-items">
+                    <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Services</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">About</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Help</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Contact</a></li>
+                    
+                </ul>
+            </div>
+           </nav>
+          
             
-        </div>
+       
         </div>
         
 
