@@ -70,6 +70,12 @@ a.active, a:hover{
 #check{
     display: none;
 }
+/* careosel starts here */
+.d-block {
+    margin-top: 70px;
+}
+
+/* careosel ends here */
 @media (max-width : 952px){
     label.logo{
         font-size: 30px;
