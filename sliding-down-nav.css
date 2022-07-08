@@ -44,8 +44,9 @@ nav{
     width: 30px;
     height:4px ;
     background-color: white;
-    margin: 4px;
+    margin: 6px;
     border-radius: 2px;
+    transition: all 1s ease-in-out;
 }
 #nav-toggle{
     display: none;
@@ -56,6 +57,7 @@ nav{
         cursor: pointer;
     }
     nav{
+        position: fixed;
         justify-content: space-around;
 
     }
@@ -77,6 +79,15 @@ nav{
     }
    nav :checked ~ .links{
     bottom:30vh ;
+   }
+   nav :checked ~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(765deg);
+   }
+   nav :checked ~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-765deg);
+   }
+   nav :checked ~ .icon-burger .line:nth-child(2){
+        opacity: 0;
    }
    
     
