@@ -55,10 +55,14 @@ nav{
     .icon-burger{
         display: block;
         cursor: pointer;
+        margin-right: 25px;
+    }
+    .logo{
+        margin-left: 25px;
     }
     nav{
         position: fixed;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
     .links{
