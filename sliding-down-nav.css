@@ -62,7 +62,8 @@ nav{
 
     }
     .links{
-        
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         left: 0;
         right: 0;
         bottom: 100%;
@@ -75,6 +76,7 @@ nav{
         height: auto;
         flex-direction: column;
         transition: all .5s ease-in-out;
+        justify-content: space-evenly;
 
     }
    nav :checked ~ .links{
