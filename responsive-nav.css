@@ -69,7 +69,7 @@ nav{
     }
     .burger div{
         display: block;
-        transition: all 0.3s ease;
+        transition: all .6s ease;
         
     }
     .nav-links{
@@ -94,13 +94,13 @@ nav{
     transform: translateX(0%);
 }
 .toggle .line1{
-    transform: rotate(-45deg ) translate(-5px,6px);
+    transform: rotate(-405deg ) translate(-5px,6px);
 }
 .toggle .line2{
     opacity: 0;
 }
 .toggle .line3{
-    transform: rotate(45deg ) translate(-5px,-6px);
+    transform: rotate(405deg ) translate(-5px,-6px);
 }
 
 
