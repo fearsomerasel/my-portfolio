@@ -4,7 +4,8 @@
 }
 
 nav{
-    position: relative;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +84,7 @@ nav{
         align-items: center;
         width: 50%;
         transform: translateX(100%);
-        transition: .4s ease-in;
+        transition: .3s ease-in;
         border-bottom-left-radius: 150px;
         
     }
