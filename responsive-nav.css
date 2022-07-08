@@ -2,11 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: url(bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 nav{
     position: relative;
     display: flex;
