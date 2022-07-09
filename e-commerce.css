@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* background color*/
+    --bg-danger:#f63440;
+    --bg-white:#fff;
+    --bg-light-white: #f5f5f5;
+
+    /* text color */
+    --primary-font:"Poppins", "sans-sarif";
+    --text-white:#fff;
+    --text-black:#121212;
+    --text-danger:#f63440;
+    --text-gray:#aaa;
+    --text-dark-gray:#777;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    background: var(--bg-white);
+    color: var(--text-black);
+    overflow: scroll;
+}
+
+/* custom css */
+a,
+a:hover{
+    text-decoration: none;
+}
+.btn-danger{
+    background-color: var(--bg-danger);
+    border-color: var(--bg-danger);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-danger:hover{
+    color: var(--text-danger);
+    background: transparent;
+    
+    
+}
+
+/* navigaation css */
+.fixed-top{
+    box-shadow:2px 2px 3px rgba(128, 128, 128, 0.568);
+}
+.nav-link{
+    font-family: sans-serif;
+    color: var(--text-black);
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+.nav-link:hover,
+.nav-link.active{
+    color: var(--text-danger);
+}
+.navbar-toggler-icon{
+    width: unset;
+    height: unset;
+}
+.navbar-toggler:focus{
+    box-shadow: 1px 1px 4px 1px gray;
+}
+/* home css */
+.home-banner-1,
+.home-banner-2{
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+}
+.home-banner-1{
+    background-image: url(e-img/slide1.jpg);
+}
+.home-banner-2{
+    background-image: url(e-img/slide2.jpg);
+}
+.home-banner-text{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+}
+.home-banner-text h1{
+    font-size: 6rem;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--bg-danger);
+    width:2.5rem ;
+    height: .33rem;
+   
+}
+.slider-icon{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--text-danger);
+    
+}
+
+/* offer */
+.offers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

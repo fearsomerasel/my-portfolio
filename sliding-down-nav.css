@@ -13,10 +13,10 @@ nav{
     top: 0;
     font-family: sans-serif;
     height: 70px;
-    background-color: #3e65da;
+    background-color: white;
 }
 .logo{
-    color: white;
+    color: black;
     font-size: 30px;
 }
 .links{
@@ -27,13 +27,13 @@ nav{
     width: 40%;
 }
 .links a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     padding: 10px 20px;
 }
 .links a:hover{
-    background-color: black;
+    background-color: rgba(32, 29, 29, 0.44);
 }
 .icon-burger{
     display: none;
@@ -43,7 +43,7 @@ nav{
 .line{
     width: 30px;
     height:4px ;
-    background-color: white;
+    background-color: black;
     margin: 6px;
     border-radius: 2px;
     transition: all 1s ease-in-out;
@@ -75,7 +75,7 @@ nav{
         overflow: hidden;
         z-index: 9;
         top: 50px;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(240, 240, 213, 0.89);
         width: auto;
         height: auto;
         flex-direction: column;

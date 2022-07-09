@@ -1,0 +1,20 @@
+@media (max-width:850px){
+   .home-banner-1,
+   .home-banner-2{
+    background-position:center ;
+    min-height: 500px;
+   }
+   .home-banner-text{
+    width: 60%;
+    top: 120px;
+   }
+   .home-banner-text h1{
+    font-size: 3.5rem;
+    
+   }
+   .slider-icon{
+    margin-top: -100px;
+    font-size: 2rem;
+   }
+   
+}
