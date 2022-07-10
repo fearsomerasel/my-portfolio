@@ -13,7 +13,7 @@ nav{
     top: 0;
     font-family: sans-serif;
     height: 70px;
-    background-color: white;
+    background-color: rgba(213, 207, 207, 0.927);
 }
 .logo{
     color: black;
@@ -34,6 +34,7 @@ nav{
 }
 .links a:hover{
     background-color: rgba(32, 29, 29, 0.44);
+    color: white;
 }
 .icon-burger{
     display: none;
@@ -46,7 +47,7 @@ nav{
     background-color: black;
     margin: 6px;
     border-radius: 2px;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 #nav-toggle{
     display: none;
@@ -87,10 +88,10 @@ nav{
     bottom:30vh ;
    }
    nav :checked ~ .icon-burger .line:nth-child(1){
-        transform: translateY(10px) rotate(765deg);
+        transform: translateY(10px) rotate(-45deg);
    }
    nav :checked ~ .icon-burger .line:nth-child(3){
-        transform: translateY(-10px) rotate(-765deg);
+        transform: translateY(-10px) rotate(45deg);
    }
    nav :checked ~ .icon-burger .line:nth-child(2){
         opacity: 0;
