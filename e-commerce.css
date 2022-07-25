@@ -396,3 +396,28 @@ textarea:focus{
     border: none;
     box-shadow: 4px 4px 4px 4px rgb(179, 177, 177);
 }
+.copyright{
+    background-color: var(--bg-danger);
+    height: 100px;
+}
+.copyright p,a{
+    color: var(--bg-white);
+}
+#scrollUp{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    height: 2.1rem;
+    width: 2rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 500;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    background-color: var(--bg-danger);
+}
+#scrollUp span{
+    line-height: 2rem;
+
+}
