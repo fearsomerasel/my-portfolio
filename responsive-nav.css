@@ -15,7 +15,6 @@
  ::-webkit-scrollbar-thumb {
     background-image:linear-gradient(to top, rgb(41, 41, 246), red , yellow);
     border-radius: 10px;
-    box-shadow: 9px 9px 9px 9px blue;
     padding: 10px;
    
   }
