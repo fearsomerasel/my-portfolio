@@ -7,38 +7,46 @@ nav{
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    z-index: 10;
     left: 0;
     right: 0;
     top: 0;
     font-family: sans-serif;
-    height: 70px;
-    background-color: rgba(213, 207, 207, 0.927);
+    height: 60px;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 1px 1px 1px 1px gray;
+    z-index: 200;
 }
 .logo{
     color: black;
     font-size: 30px;
 }
 .links{
+    padding-top: 20px;
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 40%;
+    
 }
 .links a{
+    text-decoration: none;
     color: black;
     text-decoration: none;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 5px 0px;
+    margin: 0px 20px;
+
 }
 .links a:hover{
-    background-color: rgba(32, 29, 29, 0.44);
-    color: white;
+    border-top: 4px solid red;
+    color: black;
+    transition: all .3s ease-in-out;
+
 }
 .icon-burger{
     display: none;
-    transform: translateY(-10%);
+    /* transform: translateY(-10%); */
 
 }
 .line{
@@ -47,7 +55,7 @@ nav{
     background-color: black;
     margin: 6px;
     border-radius: 2px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 #nav-toggle{
     display: none;
@@ -65,8 +73,16 @@ nav{
         position: fixed;
         justify-content: space-between;
 
+
+    }
+    .links a{
+        color: white;
+    }
+    .links a:hover{
+        color: white;
     }
     .links{
+        padding-top: 0px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         left: 0;
@@ -75,13 +91,14 @@ nav{
         position: fixed;
         overflow: hidden;
         z-index: 9;
-        top: 50px;
-        background-color: rgba(240, 240, 213, 0.89);
+        top: 60px;
+        background-color: rgba(42, 38, 38, 0.829);
         width: auto;
         height: auto;
         flex-direction: column;
-        transition: all .5s ease-in-out;
+        transition: all .4s ease-in-out;
         justify-content: space-evenly;
+        box-shadow: 1px 1px 1px 1px gray;
 
     }
    nav :checked ~ .links{
