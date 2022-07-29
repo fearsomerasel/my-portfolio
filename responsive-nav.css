@@ -31,6 +31,8 @@
 }
 .lexend{
     font-family: 'Lexend Deca', sans-serif;
+    text-align: justify;
+    font-size: 15px;
 }
 /*  */
 header{
@@ -108,7 +110,7 @@ nav{
     color: white;
     padding-top: 30vh;
     padding-left: 100px;
-    position: fixed;
+    
 }
 .h1{
     font-family: 'Righteous', cursive;
@@ -151,34 +153,62 @@ nav{
 /* about starts */
 #about{  
     -webkit-clip-path: polygon(52% 16%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0); 
-    clip-path: polygon(50% 16%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    clip-path: polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
    background-color: white;
-   margin-top: -100px;
+   margin-top: -30px;
+   padding-top: 30px;
    
-   
-   
-
 } 
 .section-info{
     text-align: center;
 }
-.section-info h1{
-    padding-top: 100px;
-    
-}
 .about-content{
-    padding-bottom: 40px;
+    padding: 30px 0px;
 }
 .about-img{
-    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+   
 }
-.about-text{
-    padding-left: 30px;
-    margin-top: 40px;
-    height: 80%;
-    align-items: initial;
+
+/* skills */
+#skills{
+    background-image: url(p-img/bg2.jpg);
+    background-attachment: fixed;
+    padding-top: 5vh;
+    padding-bottom: 50px;
+    clip-path: polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
+}
+.skill-head{
+    text-align: center;
+    color: white;
+}
+.skill-text{
+    
+    color: rgb(184, 179, 179);
+    padding: 25px 40px;
+}
+.skill-content{
+    margin: 30px 30px;
+    
+    background-color: rgba(31, 28, 28, 0.734);
+}
+.progress-div{
+    padding-top: 20px;
+    padding-left: 8%;
+    color: wheat;
+}
+progress{
+    width: 80%;
+    height: 25px;
+    
     
 }
+
+
+/*  */
 
 
 /* media ipad */
@@ -230,16 +260,15 @@ nav{
        
     }
     #about{
-    clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-        margin-top: -90px;
-    }
-    .about-img{
-        padding: 90px 0px;
-    }
-    .section-info h1{
-        padding-top: 130px;
+        clip-path: polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
+        margin-top: -150px;
         
     }
+   
+    .about-text{
+        text-align: justify;
+    }
+  
   
     .text{
         
@@ -254,12 +283,14 @@ nav{
     .text h1{
         font-size: 35px;
     }
+
 }
 /* media pixel5 */
 @media screen and (max-width:500px){
     #about{
-        clip-path: polygon(50% 10%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-            margin-top: -180px;
+        clip-path:polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
+        margin-top: -150px;
+        
         }
         .text{
         
@@ -267,9 +298,7 @@ nav{
             padding-left: 30px;
             max-width: 60%;
         }
-        .about-img{
-            padding: 20px 10px;
-        }
+      
 
 }
 
