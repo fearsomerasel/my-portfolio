@@ -31,11 +31,11 @@
 }
 .lexend{
     font-family: 'Lexend Deca', sans-serif;
-    text-align: justify;
     font-size: 15px;
 }
 /*  */
 header{
+    
     background-attachment: fixed;
     width: 100%;
     height: 600px;
@@ -167,6 +167,7 @@ nav{
     padding: 30px 0px;
 }
 .about-text{
+    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -222,34 +223,68 @@ progress{
 /*  */
 /* services */
 #services{
-padding: 30px 20px;
-clip-path: polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
-background-color:white;
-margin-top: -50px;
-
+    padding: 50px 50px;
 }
-.service-row img{
-    width: 100%;
-}
-.service-row{
-    margin-top: 20px;
+.services-row{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.service-box{
-    
-    text-align: center;
-    margin: 20px 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-around;
-    box-shadow: 3px 4px 5px 5px gray;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.services-box{
+    flex-basis: 25%;
+    text-align: center;
+    box-shadow: 3px 4px 4px 5px rgba(161, 160, 160, 0.848);
+    padding: 20px;
+    margin-top: 20px;
 
+}
+.services-box:hover{
+    background: red;
+    color: white;
+    transition: .4s;
+
+}
+.services-box img{
+    width: 70%;
 }
 /* services end*/
+/* contact */
+#contact{
+    padding: 100px 50px;
+    background: linear-gradient(160deg, #e74c3c 45%, white 0%);
+}
+.contact-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col{
+    flex-basis: 50%;
+}
+.contact-right-col{
+    flex-basis: 50%;
+
+}
+.contact-right-col h2{
+    margin-bottom: 20px;
+}
+.contact-right-col input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    border: none;
+
+}
+.contact-right-col textarea{
+    width: 80%;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    border: none;
+}
+
 
 
 /* media ipad */
@@ -328,9 +363,20 @@ margin-top: -50px;
     .service-box{
        width: 70%; 
     }
-       
+    /*  */
+    .services-box{
+        flex-basis: 75%;
+    
+    } 
 
     /*  */
+ 
+    .contact-right-col{
+        flex-basis: 100%;
+    
+    }
+    /*  */
+
 
 }
 /* media pixel5 */
