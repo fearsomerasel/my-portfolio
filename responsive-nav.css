@@ -1,6 +1,10 @@
 *{
-    margin: 0;
+    margin: 40;
     padding: 0;
+}
+body{
+    
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar{
    
@@ -38,7 +42,7 @@ header{
     
     background-attachment: fixed;
     width: 100%;
-    height: 600px;
+    height: 90vh;
     background-image: url('p-img/b1.png'), url('p-img/bg1.jpeg');
     background-size: 50% 100%,cover;
     background-position: right,center;
@@ -251,7 +255,7 @@ progress{
 /* services end*/
 /* contact */
 #contact{
-    padding: 100px 50px;
+    padding: 50px 50px;
     background: linear-gradient(160deg, #e74c3c 45%, white 0%);
 }
 .contact-row{
@@ -284,6 +288,29 @@ progress{
     box-shadow: 2px 2px 2px 2px gray;
     border: none;
 }
+/* footer */
+.footer{
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer ul{
+    font-size: 25px;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -292,9 +319,7 @@ progress{
     nav{
         justify-content: space-between;
     }
-    body{
-        overflow-x: hidden;
-    }
+  
     .burger{
         display: block;
         cursor: pointer;
@@ -325,16 +350,7 @@ progress{
         padding-bottom: 150px;
         
     }
-    header{
-        background-attachment: fixed;
-        width: 100%;
-        height: 800px;
-        background-image: url('p-img/b1.png'), url('p-img/bg1.jpeg');
-        background-size: 50% 100%,cover;
-        background-position: right,center;
-        background-repeat: no-repeat;
-       
-    }
+
     #about{
         clip-path: polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
         margin-top: -150px;
@@ -348,7 +364,7 @@ progress{
   
     .text{
         
-        padding-top:40%;
+        padding-top:25%;
         padding-left: 50px;
         max-width: 50%;
     
@@ -375,12 +391,20 @@ progress{
         flex-basis: 100%;
     
     }
+    
     /*  */
+    .footer ul{
+        flex-basis: 70%;
+    }
 
 
 }
 /* media pixel5 */
 @media screen and (max-width:500px){
+    body{
+        margin-right: -39px;
+    }
+    
     #about{
         clip-path:polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
         margin-top: -150px;

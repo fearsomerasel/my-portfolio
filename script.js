@@ -10,3 +10,9 @@ $(".love").ripples({
     perturbance: .08,
 
 })
+$("#skills").ripples({
+    resolution: 512,
+    dropRadius: 20,
+    perturbance: .08,
+
+})
