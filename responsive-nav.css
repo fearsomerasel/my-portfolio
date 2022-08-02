@@ -155,6 +155,55 @@ nav{
     transform: scale(1.05);
     box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.518);
 }
+.glowing-btn{
+    position: relative;
+    margin-top: 20px;
+    height: 60px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: rgb(249, 249, 7);
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.glowing-btn:hover::before{
+    opacity: 1;
+    z-index: -1;
+
+}
+
+.glowing-btn:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+    background: linear-gradient( 90deg, #f22e69, #f8c027,#e43603,rgb(250, 250, 30));
+    background-size: 400%;
+
+
+}
+.glowing-btn:before{
+    content:'' ;
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    border-radius: 20px;
+    filter: blur(20px);
+
+}
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
 /* about starts */
 #about{  
     -webkit-clip-path: polygon(52% 16%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0); 
@@ -222,6 +271,7 @@ progress{
     
     
 }
+
 
 
 /*  */
@@ -403,7 +453,7 @@ progress{
 /* media pixel5 */
 @media screen and (min-height:900px){
     body{
-        margin-right: -110px;
+        margin-right: -150px;
     }
     
 }

@@ -7,10 +7,12 @@
     <title>Responsive navigation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/typed.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Concert+One&family=Lexend+Deca:wght@200;300&family=Mochiy+Pop+One&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="responsive-nav.css">
 </head>
 <body>
@@ -37,8 +39,8 @@
     <div class="text">
         <h4 class="h4">Hello I am,</h4>
         <h1 class="h1">Rasel Hossen</h1>
-        <h4>I am a Front End Developer</h4>
-        <button class="hire btn"><a href="" class="btn-link">Hire me</a> </button>
+        <h4>I am a <span id="rasel" class="h4" style="color: rgba(248, 113, 9, 0.915);"></span></h4>
+        <button class="hire btn glowing-btn"><a href="" class="btn-link">Hire me</a> </button>
     </div>
     </header>
     </section>
@@ -57,9 +59,9 @@
                     <img src="p-img/about.jpg" alt="" width="100%">
                 </div>
                 <div class="col-md-6 about-text">
-                    <h4 class="concert">Hello I am a Front End Developer</h4>
+                    <h4>I am a <span id="rasel2" class="h4 concert" style="color: rgba(248, 113, 9, 0.915);"></span></h4>
                     <p class="lexend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, in quaerat laboriosam ea dolore sed quia qui similique nihil, harum esse itaque dolores commodi tempora! Perferendis repudiandae suscipit animi nihil ut quos aliquid illo venue tenetur accusamus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, natus dicta inventore libero laborum soluta alias repudiandae nobis. Cumque.</p>
-                    <button class="btn cv-btn"><a href="" class="btn-link">Download CV</a> </button>
+                    <button class="btn cv-btn "><a href="" class="btn-link">Download CV</a> </button>
 
                 </div>
             </div>
@@ -116,17 +118,17 @@
             <h4 class="h4">What we Provide?</h4>
             </div>
             <div class="services-row">
-                <div class="services-box">
+                <div class="services-box" data-tilt>
                     <img src="p-img/b2.png" alt="">
                     <h4 class="concert">Web Design</h4>
                     <p class="lexend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus amet minima</p>
                 </div>
-                <div class="services-box">
+                <div class="services-box" data-tilt>
                     <img src="p-img/b2.png" alt="">
                     <h4 class="concert">Web Design</h4>
                     <p class="lexend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus amet minima</p>
                 </div>
-                <div class="services-box">
+                <div class="services-box" data-tilt>
                     <img src="p-img/b2.png" alt="">
                     <h4 class="concert">Web Design</h4>
                     <p class="lexend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus amet minima</p>
@@ -151,7 +153,7 @@
                     <input type="text" placeholder="Email">
                     <Br></Br> 
                     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
-                    <button class="btn lexend">Submit</button>
+                    <button class="lexend glowing-btn">Submit</button>
                   </form>
                 </div>
             </div>
@@ -179,6 +181,26 @@
 });
         });
     </script>
+    <script>
+        var typed = new Typed('#rasel', {
+  strings: ["Front End Developer", "YouTuber"],
+  typeSpeed: 80,
+  backSpeed: 80,
+  loop:true,
+});
+        var typed2 = new Typed('#rasel2', {
+  strings: ["Front End Developer"],
+  typeSpeed: 80,
+  backSpeed: 80,
+  loop:true,
+});
+
+// $('.services-box').tilt({
+//     glare: true,
+//     maxGlare: .5
+// })
+    </script>
+    <script src="js/tilt.jquery.min.js"></script>
     <script src="responsive-nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
