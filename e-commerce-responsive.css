@@ -1,9 +1,13 @@
 @media (max-width:850px){
    .home-banner-1,
    .home-banner-2{
-    background-position:center ;
+    background-position: 60% 0% ;
     min-height: 500px;
    }
+   .home-banner-2{
+      background-position: 70%;
+   }
+
    .home-banner-text{
     width: 60%;
     top: 120px;
