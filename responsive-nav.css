@@ -457,9 +457,19 @@ progress{
     }
     
 }
+@media screen and (max-width:350px){
+ body{
+    overflow-x: hidden;
+ }
+@media screen and (max-width:300px){
+ body{
+    overflow-x: hidden;
+ }
+}
 @media screen and (max-width:430px){
     body{
         margin-right: -50px;
+        overflow-x: hidden !important;
     }
     #about{
         clip-path:polygon(0.0% 1.71em, 3.4% 1.52em, 6.9% 1.29em, 10.3% 1.05em, 13.8% 0.81em, 17.2% 0.58em, 20.7% 0.37em, 24.1% 0.20em, 27.6% 0.08em, 31.0% 0.00em, 34.5% -0.01em, 37.9% 0.03em, 41.4% 0.13em, 44.8% 0.27em, 48.3% 0.45em, 51.7% 0.66em, 55.2% 0.88em, 58.6% 1.10em, 62.1% 1.30em, 65.5% 1.46em, 69.0% 1.59em, 72.4% 1.65em, 75.9% 1.66em, 79.3% 1.60em, 82.8% 1.47em, 86.2% 1.28em, 89.7% 1.02em, 93.1% 0.72em, 96.6% 0.37em, 100.0% 0.00em, 100% 100%, 0% 100%);
